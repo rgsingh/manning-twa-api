@@ -71,6 +71,18 @@
 			</exclusions>
 		</dependency>
 
+		<!-- In-memory caching -->
+		<dependency>
+			<groupId>org.springframework.boot</groupId>
+			<artifactId>spring-boot-starter-cache</artifactId>
+		</dependency>
+
+		<!-- In-memory caching -->
+		<dependency>
+			<groupId>com.github.ben-manes.caffeine</groupId>
+			<artifactId>caffeine</artifactId>
+		</dependency>
+
 		<dependency>
 			<groupId>org.springframework.boot</groupId>
 			<artifactId>spring-boot-starter-jetty</artifactId>
@@ -107,12 +119,12 @@
 		    <artifactId>chaos-monkey-spring-boot</artifactId>
 		    <version>${chaos-monkey-spring-boot.version}</version>
 		</dependency>
-		
+
 		<dependency>
 			<groupId>redis.clients</groupId>
 			<artifactId>jedis</artifactId>
 		</dependency>
-				
+
 		<dependency>
 			<groupId>com.google.guava</groupId>
 			<artifactId>guava</artifactId>
@@ -199,6 +211,6 @@
 			<id>maven2</id>
 			<name>maven2</name>
 			<url>https://repo.maven.apache.org/maven2</url>
-		</repository> 
+		</repository>
 	</repositories>
 </project>

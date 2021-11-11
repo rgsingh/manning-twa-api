@@ -3,7 +3,7 @@
 	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
 	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/xsd/maven-4.0.0.xsd">
 	<modelVersion>4.0.0</modelVersion>
-	
+
 	<parent>
 		<groupId>com.twa.flights.common</groupId>
 		<artifactId>flights-parent</artifactId>
@@ -27,7 +27,7 @@
 
 	<properties>
 		<application.name>api-provider-alpha</application.name>
-		<application.mainClass>com.twa.flights.api.provider.alpha.App</application.mainClass>		
+		<application.mainClass>com.twa.flights.api.provider.alpha.App</application.mainClass>
 
 		<!-- Spring -->
 		<spring-boot.version>2.4.2</spring-boot.version>
@@ -73,6 +73,18 @@
 			</exclusions>
 		</dependency>
 
+		<!-- In-memory caching -->
+		<dependency>
+			<groupId>org.springframework.boot</groupId>
+			<artifactId>spring-boot-starter-cache</artifactId>
+		</dependency>
+
+		<!-- In-memory caching -->
+		<dependency>
+			<groupId>com.github.ben-manes.caffeine</groupId>
+			<artifactId>caffeine</artifactId>
+		</dependency>
+
 		<dependency>
 			<groupId>org.springframework.boot</groupId>
 			<artifactId>spring-boot-starter-jetty</artifactId>
@@ -104,7 +116,7 @@
 		    <artifactId>chaos-monkey-spring-boot</artifactId>
 		    <version>${chaos-monkey-spring-boot.version}</version>
 		</dependency>
-		
+
 		<dependency>
 			<groupId>joda-time</groupId>
 			<artifactId>joda-time</artifactId>
@@ -216,7 +228,7 @@
 						</goals>
 					</execution>
 				</executions>
-			</plugin>			
+			</plugin>
 		</plugins>
 	</build>
 	<repositories>
@@ -229,6 +241,6 @@
 			<id>maven2</id>
 			<name>maven2</name>
 			<url>https://repo.maven.apache.org/maven2</url>
-		</repository> 
+		</repository>
 	</repositories>
 </project>

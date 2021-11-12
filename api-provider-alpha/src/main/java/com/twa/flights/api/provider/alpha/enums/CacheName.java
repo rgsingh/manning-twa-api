@@ -1,4 +1,4 @@
-package com.twa.flights.api.clusters.enums;
+package com.twa.flights.api.provider.alpha.enums;
 
 public enum CacheName {
     CITY_CACHE_NAME(Constants.CITY_CACHE_VALUE);

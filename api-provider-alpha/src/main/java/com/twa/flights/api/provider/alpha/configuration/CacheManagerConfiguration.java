@@ -1,7 +1,7 @@
-package com.twa.flights.api.clusters.configuration;
+package com.twa.flights.api.provider.alpha.configuration;
 
 import com.github.benmanes.caffeine.cache.Caffeine;
-import com.twa.flights.api.clusters.enums.CacheName;
+import com.twa.flights.api.provider.alpha.enums.CacheName;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.cache.CacheManager;
 import org.springframework.cache.annotation.EnableCaching;

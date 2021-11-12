@@ -1,6 +1,6 @@
 management:
   health.db.enabled: false
-  endpoints:    
+  endpoints:
     web:
       base-path: /
       exposure:
@@ -15,7 +15,7 @@ jetty:
   threadPool:
     maxThreads: 10
     minThreads: 10
-    
+
 chaos:
   monkey:
     enabled: false
@@ -23,17 +23,21 @@ chaos:
       restController: true
     assaults:
       exceptionsActive: true
-      latencyActive: true   
+      latencyActive: true
       latencyRangeStart: 3000
-      latencyRangeEnd: 10000 
-      
+      latencyRangeEnd: 10000
+
 spring:
   profiles:
     active: chaos-monkey
-        
+
 connector:
    catalog:
       host: api-catalog:6070
       responseTimeout: 1000
       connectionTimeout: 1000
       readTimeout: 1000
+
+cache:
+  maxElements: 500
+  duration: 5

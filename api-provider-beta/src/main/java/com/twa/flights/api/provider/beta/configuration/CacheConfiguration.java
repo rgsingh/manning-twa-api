@@ -1,6 +1,6 @@
-package com.twa.flights.api.clusters.configuration;
+package com.twa.flights.api.provider.beta.configuration;
 
-import com.twa.flights.api.clusters.configuration.settings.CacheSettings;
+import com.twa.flights.api.provider.beta.configuration.settings.CacheSettings;
 import org.springframework.boot.context.properties.ConfigurationProperties;
 import org.springframework.context.annotation.Configuration;
 

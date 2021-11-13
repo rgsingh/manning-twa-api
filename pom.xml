@@ -20,6 +20,7 @@
 	</developers>
 
 	<properties>
+		<sonar.projectKey>rgsingh_manning-twa-api</sonar.projectKey>
 		<sonar.organization>evilpanini</sonar.organization>
 		<sonar.host.url>https://sonarcloud.io</sonar.host.url>
 	</properties>

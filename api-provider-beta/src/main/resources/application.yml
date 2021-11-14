@@ -39,5 +39,5 @@ connector:
       readTimeout: 1000
 
 cache:
-  maxElements: 500
+  maxElements: 180
   duration: 5

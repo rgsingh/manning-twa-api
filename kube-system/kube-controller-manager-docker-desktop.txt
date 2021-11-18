@@ -1,0 +1,335 @@
+Flag --port has been deprecated, see --secure-port instead.
+I1117 12:31:05.555578       1 serving.go:347] Generated self-signed cert in-memory
+I1117 12:31:08.101309       1 controllermanager.go:175] Version: v1.21.5
+I1117 12:31:08.105091       1 secure_serving.go:202] Serving securely on 127.0.0.1:10257
+I1117 12:31:08.106294       1 dynamic_cafile_content.go:167] Starting request-header::/run/config/pki/front-proxy-ca.crt
+I1117 12:31:08.107118       1 dynamic_cafile_content.go:167] Starting client-ca-bundle::/run/config/pki/ca.crt
+I1117 12:31:08.108990       1 tlsconfig.go:240] Starting DynamicServingCertificateController
+I1117 12:31:21.682456       1 shared_informer.go:240] Waiting for caches to sync for tokens
+I1117 12:31:21.696826       1 controllermanager.go:574] Started "replicaset"
+I1117 12:31:21.696903       1 core.go:241] Will not configure cloud provider routes for allocate-node-cidrs: false, configure-cloud-routes: true.
+W1117 12:31:21.696983       1 controllermanager.go:566] Skipping "route"
+I1117 12:31:21.696993       1 replica_set.go:182] Starting replicaset controller
+I1117 12:31:21.697007       1 shared_informer.go:240] Waiting for caches to sync for ReplicaSet
+I1117 12:31:21.783688       1 shared_informer.go:247] Caches are synced for tokens 
+I1117 12:31:21.823632       1 controllermanager.go:574] Started "namespace"
+I1117 12:31:21.824483       1 namespace_controller.go:200] Starting namespace controller
+I1117 12:31:21.824556       1 shared_informer.go:240] Waiting for caches to sync for namespace
+I1117 12:31:21.830147       1 controllermanager.go:574] Started "endpointslice"
+I1117 12:31:21.833009       1 endpointslice_controller.go:256] Starting endpoint slice controller
+I1117 12:31:21.833079       1 shared_informer.go:240] Waiting for caches to sync for endpoint_slice
+I1117 12:31:21.841294       1 certificate_controller.go:118] Starting certificate controller "csrsigning-kubelet-serving"
+I1117 12:31:21.841382       1 dynamic_serving_content.go:130] Starting csr-controller::/run/config/pki/ca.crt::/run/config/pki/ca.key
+I1117 12:31:21.841394       1 shared_informer.go:240] Waiting for caches to sync for certificate-csrsigning-kubelet-serving
+I1117 12:31:21.841460       1 dynamic_serving_content.go:130] Starting csr-controller::/run/config/pki/ca.crt::/run/config/pki/ca.key
+I1117 12:31:21.841294       1 certificate_controller.go:118] Starting certificate controller "csrsigning-kubelet-client"
+I1117 12:31:21.841548       1 shared_informer.go:240] Waiting for caches to sync for certificate-csrsigning-kubelet-client
+I1117 12:31:21.841895       1 certificate_controller.go:118] Starting certificate controller "csrsigning-kube-apiserver-client"
+I1117 12:31:21.841986       1 shared_informer.go:240] Waiting for caches to sync for certificate-csrsigning-kube-apiserver-client
+I1117 12:31:21.843408       1 dynamic_serving_content.go:130] Starting csr-controller::/run/config/pki/ca.crt::/run/config/pki/ca.key
+I1117 12:31:21.843864       1 controllermanager.go:574] Started "csrsigning"
+I1117 12:31:21.844438       1 certificate_controller.go:118] Starting certificate controller "csrsigning-legacy-unknown"
+I1117 12:31:21.844717       1 shared_informer.go:240] Waiting for caches to sync for certificate-csrsigning-legacy-unknown
+I1117 12:31:21.844827       1 dynamic_serving_content.go:130] Starting csr-controller::/run/config/pki/ca.crt::/run/config/pki/ca.key
+I1117 12:31:21.848009       1 controllermanager.go:574] Started "csrapproving"
+I1117 12:31:21.848301       1 certificate_controller.go:118] Starting certificate controller "csrapproving"
+I1117 12:31:21.848318       1 shared_informer.go:240] Waiting for caches to sync for certificate-csrapproving
+I1117 12:31:21.852524       1 controllermanager.go:574] Started "bootstrapsigner"
+I1117 12:31:21.853468       1 shared_informer.go:240] Waiting for caches to sync for bootstrap_signer
+I1117 12:31:21.863470       1 controllermanager.go:574] Started "persistentvolume-binder"
+I1117 12:31:21.864878       1 pv_controller_base.go:308] Starting persistent volume controller
+I1117 12:31:21.865082       1 shared_informer.go:240] Waiting for caches to sync for persistent volume
+I1117 12:31:21.869027       1 controllermanager.go:574] Started "clusterrole-aggregation"
+I1117 12:31:21.869538       1 clusterroleaggregation_controller.go:194] Starting ClusterRoleAggregator
+I1117 12:31:21.869588       1 shared_informer.go:240] Waiting for caches to sync for ClusterRoleAggregator
+I1117 12:31:21.874061       1 controllermanager.go:574] Started "root-ca-cert-publisher"
+I1117 12:31:21.874380       1 publisher.go:102] Starting root CA certificate configmap publisher
+I1117 12:31:21.874400       1 shared_informer.go:240] Waiting for caches to sync for crt configmap
+I1117 12:31:21.879463       1 controllermanager.go:574] Started "endpoint"
+W1117 12:31:21.879501       1 controllermanager.go:566] Skipping "nodeipam"
+I1117 12:31:21.879785       1 endpoints_controller.go:189] Starting endpoint controller
+I1117 12:31:21.879825       1 shared_informer.go:240] Waiting for caches to sync for endpoint
+I1117 12:31:21.883677       1 node_lifecycle_controller.go:76] Sending events to api server
+E1117 12:31:21.883732       1 core.go:231] failed to start cloud node lifecycle controller: no cloud provider provided
+W1117 12:31:21.883780       1 controllermanager.go:566] Skipping "cloud-node-lifecycle"
+I1117 12:31:21.889275       1 controllermanager.go:574] Started "attachdetach"
+I1117 12:31:21.889699       1 attach_detach_controller.go:328] Starting attach detach controller
+I1117 12:31:21.889790       1 shared_informer.go:240] Waiting for caches to sync for attach detach
+I1117 12:31:21.894424       1 controllermanager.go:574] Started "persistentvolume-expander"
+I1117 12:31:21.894854       1 expand_controller.go:327] Starting expand controller
+I1117 12:31:21.894887       1 shared_informer.go:240] Waiting for caches to sync for expand
+I1117 12:31:21.899396       1 controllermanager.go:574] Started "replicationcontroller"
+I1117 12:31:21.899745       1 replica_set.go:182] Starting replicationcontroller controller
+I1117 12:31:21.899798       1 shared_informer.go:240] Waiting for caches to sync for ReplicationController
+I1117 12:31:21.908552       1 controllermanager.go:574] Started "disruption"
+I1117 12:31:21.908992       1 disruption.go:363] Starting disruption controller
+I1117 12:31:21.909015       1 shared_informer.go:240] Waiting for caches to sync for disruption
+I1117 12:31:21.912383       1 controllermanager.go:574] Started "statefulset"
+I1117 12:31:21.912680       1 stateful_set.go:146] Starting stateful set controller
+I1117 12:31:21.912712       1 shared_informer.go:240] Waiting for caches to sync for stateful set
+I1117 12:31:21.916790       1 node_lifecycle_controller.go:377] Sending events to api server.
+I1117 12:31:21.917398       1 taint_manager.go:163] "Sending events to api server"
+I1117 12:31:21.917606       1 node_lifecycle_controller.go:505] Controller will reconcile labels.
+I1117 12:31:21.917715       1 controllermanager.go:574] Started "nodelifecycle"
+I1117 12:31:21.918052       1 node_lifecycle_controller.go:539] Starting node controller
+I1117 12:31:21.918068       1 shared_informer.go:240] Waiting for caches to sync for taint
+I1117 12:31:21.936436       1 controllermanager.go:574] Started "garbagecollector"
+I1117 12:31:21.938479       1 garbagecollector.go:142] Starting garbage collector controller
+I1117 12:31:21.938778       1 shared_informer.go:240] Waiting for caches to sync for garbage collector
+I1117 12:31:21.939099       1 graph_builder.go:289] GraphBuilder running
+E1117 12:31:21.943841       1 core.go:91] Failed to start service controller: WARNING: no cloud provider provided, services of type LoadBalancer will fail
+W1117 12:31:21.944001       1 controllermanager.go:566] Skipping "service"
+I1117 12:31:21.952314       1 controllermanager.go:574] Started "pv-protection"
+I1117 12:31:21.953990       1 pv_protection_controller.go:83] Starting PV protection controller
+I1117 12:31:21.954762       1 shared_informer.go:240] Waiting for caches to sync for PV protection
+I1117 12:31:21.962102       1 controllermanager.go:574] Started "ttl-after-finished"
+I1117 12:31:21.963031       1 ttlafterfinished_controller.go:109] Starting TTL after finished controller
+I1117 12:31:21.963248       1 shared_informer.go:240] Waiting for caches to sync for TTL after finished
+I1117 12:31:21.981860       1 controllermanager.go:574] Started "deployment"
+I1117 12:31:21.982562       1 deployment_controller.go:153] "Starting controller" controller="deployment"
+I1117 12:31:21.982617       1 shared_informer.go:240] Waiting for caches to sync for deployment
+I1117 12:31:21.985704       1 controllermanager.go:574] Started "daemonset"
+I1117 12:31:21.993006       1 daemon_controller.go:285] Starting daemon sets controller
+I1117 12:31:21.993306       1 shared_informer.go:240] Waiting for caches to sync for daemon sets
+I1117 12:31:22.016321       1 controllermanager.go:574] Started "cronjob"
+I1117 12:31:22.016830       1 cronjob_controllerv2.go:125] Starting cronjob controller v2
+I1117 12:31:22.017287       1 shared_informer.go:240] Waiting for caches to sync for cronjob
+I1117 12:31:22.025632       1 controllermanager.go:574] Started "csrcleaner"
+I1117 12:31:22.026069       1 cleaner.go:82] Starting CSR cleaner controller
+I1117 12:31:22.034837       1 controllermanager.go:574] Started "endpointslicemirroring"
+I1117 12:31:22.036230       1 endpointslicemirroring_controller.go:211] Starting EndpointSliceMirroring controller
+I1117 12:31:22.036316       1 shared_informer.go:240] Waiting for caches to sync for endpoint_slice_mirroring
+I1117 12:31:22.062878       1 controllermanager.go:574] Started "horizontalpodautoscaling"
+I1117 12:31:22.064251       1 horizontal.go:169] Starting HPA controller
+I1117 12:31:22.064395       1 shared_informer.go:240] Waiting for caches to sync for HPA
+I1117 12:31:22.067020       1 controllermanager.go:574] Started "tokencleaner"
+I1117 12:31:22.067127       1 tokencleaner.go:118] Starting token cleaner controller
+I1117 12:31:22.067138       1 shared_informer.go:240] Waiting for caches to sync for token_cleaner
+I1117 12:31:22.067145       1 shared_informer.go:247] Caches are synced for token_cleaner 
+I1117 12:31:22.118726       1 controllermanager.go:574] Started "ephemeral-volume"
+I1117 12:31:22.118844       1 controller.go:170] Starting ephemeral volume controller
+I1117 12:31:22.118875       1 shared_informer.go:240] Waiting for caches to sync for ephemeral
+I1117 12:31:22.163760       1 controllermanager.go:574] Started "serviceaccount"
+I1117 12:31:22.163964       1 serviceaccounts_controller.go:117] Starting service account controller
+I1117 12:31:22.163981       1 shared_informer.go:240] Waiting for caches to sync for service account
+I1117 12:31:22.482990       1 resource_quota_monitor.go:229] QuotaMonitor created object count evaluator for controllerrevisions.apps
+I1117 12:31:22.483254       1 resource_quota_monitor.go:229] QuotaMonitor created object count evaluator for replicasets.apps
+I1117 12:31:22.483577       1 resource_quota_monitor.go:229] QuotaMonitor created object count evaluator for leases.coordination.k8s.io
+I1117 12:31:22.485566       1 resource_quota_monitor.go:229] QuotaMonitor created object count evaluator for podtemplates
+I1117 12:31:22.485718       1 resource_quota_monitor.go:229] QuotaMonitor created object count evaluator for events.events.k8s.io
+I1117 12:31:22.485800       1 resource_quota_monitor.go:229] QuotaMonitor created object count evaluator for cronjobs.batch
+I1117 12:31:22.485969       1 resource_quota_monitor.go:229] QuotaMonitor created object count evaluator for roles.rbac.authorization.k8s.io
+I1117 12:31:22.486114       1 resource_quota_monitor.go:229] QuotaMonitor created object count evaluator for serviceaccounts
+I1117 12:31:22.486184       1 resource_quota_monitor.go:229] QuotaMonitor created object count evaluator for deployments.apps
+I1117 12:31:22.486236       1 resource_quota_monitor.go:229] QuotaMonitor created object count evaluator for ingresses.networking.k8s.io
+I1117 12:31:22.486281       1 resource_quota_monitor.go:229] QuotaMonitor created object count evaluator for limitranges
+I1117 12:31:22.486406       1 resource_quota_monitor.go:229] QuotaMonitor created object count evaluator for endpoints
+I1117 12:31:22.486487       1 resource_quota_monitor.go:229] QuotaMonitor created object count evaluator for statefulsets.apps
+I1117 12:31:22.486626       1 resource_quota_monitor.go:229] QuotaMonitor created object count evaluator for poddisruptionbudgets.policy
+I1117 12:31:22.486669       1 resource_quota_monitor.go:229] QuotaMonitor created object count evaluator for endpointslices.discovery.k8s.io
+I1117 12:31:22.486704       1 resource_quota_monitor.go:229] QuotaMonitor created object count evaluator for daemonsets.apps
+I1117 12:31:22.486743       1 resource_quota_monitor.go:229] QuotaMonitor created object count evaluator for networkpolicies.networking.k8s.io
+I1117 12:31:22.486866       1 resource_quota_monitor.go:229] QuotaMonitor created object count evaluator for rolebindings.rbac.authorization.k8s.io
+I1117 12:31:22.486976       1 resource_quota_monitor.go:229] QuotaMonitor created object count evaluator for jobs.batch
+I1117 12:31:22.487243       1 resource_quota_monitor.go:229] QuotaMonitor created object count evaluator for csistoragecapacities.storage.k8s.io
+I1117 12:31:22.487957       1 resource_quota_monitor.go:229] QuotaMonitor created object count evaluator for ingresses.extensions
+I1117 12:31:22.488143       1 resource_quota_monitor.go:229] QuotaMonitor created object count evaluator for horizontalpodautoscalers.autoscaling
+I1117 12:31:22.488168       1 controllermanager.go:574] Started "resourcequota"
+I1117 12:31:22.488878       1 resource_quota_controller.go:273] Starting resource quota controller
+I1117 12:31:22.488915       1 shared_informer.go:240] Waiting for caches to sync for resource quota
+I1117 12:31:22.488985       1 resource_quota_monitor.go:304] QuotaMonitor running
+I1117 12:31:22.499002       1 controllermanager.go:574] Started "job"
+I1117 12:31:22.499380       1 job_controller.go:150] Starting job controller
+I1117 12:31:22.499435       1 shared_informer.go:240] Waiting for caches to sync for job
+I1117 12:31:22.515913       1 controllermanager.go:574] Started "ttl"
+I1117 12:31:22.517574       1 ttl_controller.go:121] Starting TTL controller
+I1117 12:31:22.518247       1 shared_informer.go:240] Waiting for caches to sync for TTL
+I1117 12:31:22.523716       1 controllermanager.go:574] Started "pvc-protection"
+I1117 12:31:22.526120       1 pvc_protection_controller.go:110] "Starting PVC protection controller"
+I1117 12:31:22.526514       1 shared_informer.go:240] Waiting for caches to sync for PVC protection
+I1117 12:31:22.573181       1 controllermanager.go:574] Started "podgc"
+I1117 12:31:22.573888       1 gc_controller.go:89] Starting GC controller
+I1117 12:31:22.573949       1 shared_informer.go:240] Waiting for caches to sync for GC
+I1117 12:31:22.583030       1 shared_informer.go:240] Waiting for caches to sync for resource quota
+I1117 12:31:22.711145       1 shared_informer.go:240] Waiting for caches to sync for garbage collector
+I1117 12:31:22.721098       1 shared_informer.go:247] Caches are synced for certificate-csrsigning-kubelet-client 
+I1117 12:31:22.721627       1 shared_informer.go:247] Caches are synced for certificate-csrsigning-kubelet-serving 
+I1117 12:31:22.722954       1 shared_informer.go:247] Caches are synced for certificate-csrsigning-kube-apiserver-client 
+I1117 12:31:22.750026       1 shared_informer.go:247] Caches are synced for TTL after finished 
+I1117 12:31:22.758377       1 shared_informer.go:247] Caches are synced for certificate-csrsigning-legacy-unknown 
+W1117 12:31:22.761582       1 actual_state_of_world.go:534] Failed to update statusUpdateNeeded field in actual state of world: Failed to set statusUpdateNeeded to needed true, because nodeName="docker-desktop" does not exist
+I1117 12:31:22.780071       1 shared_informer.go:247] Caches are synced for certificate-csrapproving 
+I1117 12:31:22.797708       1 shared_informer.go:247] Caches are synced for expand 
+I1117 12:31:22.799706       1 shared_informer.go:247] Caches are synced for daemon sets 
+I1117 12:31:22.799929       1 shared_informer.go:247] Caches are synced for stateful set 
+I1117 12:31:22.813069       1 shared_informer.go:247] Caches are synced for job 
+I1117 12:31:22.819751       1 shared_informer.go:247] Caches are synced for endpoint_slice 
+I1117 12:31:22.820484       1 shared_informer.go:247] Caches are synced for deployment 
+I1117 12:31:22.834465       1 shared_informer.go:247] Caches are synced for TTL 
+I1117 12:31:22.834881       1 shared_informer.go:247] Caches are synced for PV protection 
+I1117 12:31:22.870991       1 shared_informer.go:247] Caches are synced for GC 
+I1117 12:31:22.871137       1 shared_informer.go:247] Caches are synced for attach detach 
+I1117 12:31:22.871166       1 shared_informer.go:247] Caches are synced for taint 
+I1117 12:31:22.878456       1 shared_informer.go:247] Caches are synced for cronjob 
+I1117 12:31:22.878962       1 shared_informer.go:247] Caches are synced for ephemeral 
+I1117 12:31:22.879192       1 shared_informer.go:247] Caches are synced for PVC protection 
+I1117 12:31:22.879296       1 shared_informer.go:247] Caches are synced for endpoint_slice_mirroring 
+I1117 12:31:22.879567       1 shared_informer.go:247] Caches are synced for persistent volume 
+I1117 12:31:22.880066       1 shared_informer.go:247] Caches are synced for disruption 
+I1117 12:31:22.880384       1 disruption.go:371] Sending events to api server.
+I1117 12:31:22.880945       1 shared_informer.go:247] Caches are synced for ReplicationController 
+I1117 12:31:22.881131       1 shared_informer.go:247] Caches are synced for ClusterRoleAggregator 
+I1117 12:31:22.881149       1 shared_informer.go:247] Caches are synced for endpoint 
+I1117 12:31:22.881159       1 shared_informer.go:247] Caches are synced for HPA 
+I1117 12:31:22.888160       1 node_lifecycle_controller.go:1398] Initializing eviction metric for zone: 
+W1117 12:31:22.888429       1 node_lifecycle_controller.go:1013] Missing timestamp for Node docker-desktop. Assuming now as a timestamp.
+I1117 12:31:22.889124       1 taint_manager.go:187] "Starting NoExecuteTaintManager"
+I1117 12:31:22.895016       1 event.go:291] "Event occurred" object="docker-desktop" kind="Node" apiVersion="v1" type="Normal" reason="RegisteredNode" message="Node docker-desktop event: Registered Node docker-desktop in Controller"
+I1117 12:31:22.894726       1 node_lifecycle_controller.go:1214] Controller detected that zone  is now in state Normal.
+I1117 12:31:22.902971       1 shared_informer.go:247] Caches are synced for ReplicaSet 
+I1117 12:31:22.935666       1 shared_informer.go:247] Caches are synced for bootstrap_signer 
+I1117 12:31:22.957584       1 shared_informer.go:247] Caches are synced for crt configmap 
+I1117 12:31:22.964329       1 shared_informer.go:247] Caches are synced for service account 
+I1117 12:31:22.983554       1 shared_informer.go:247] Caches are synced for resource quota 
+I1117 12:31:22.991141       1 shared_informer.go:247] Caches are synced for resource quota 
+I1117 12:31:23.007693       1 shared_informer.go:247] Caches are synced for namespace 
+I1117 12:31:23.419187       1 shared_informer.go:247] Caches are synced for garbage collector 
+I1117 12:31:23.419239       1 garbagecollector.go:151] Garbage collector: all resource monitors have synced. Proceeding to collect garbage
+I1117 12:31:23.422625       1 shared_informer.go:247] Caches are synced for garbage collector 
+I1117 12:32:18.527194       1 event.go:291] "Event occurred" object="kube-system/kube-dns" kind="Endpoints" apiVersion="v1" type="Warning" reason="FailedToUpdateEndpoint" message="Failed to update endpoint kube-system/kube-dns: Operation cannot be fulfilled on endpoints \"kube-dns\": the object has been modified; please apply your changes to the latest version and try again"
+I1117 13:04:21.102187       1 trace.go:205] Trace[2086131962]: "Reflector ListAndWatch" name:k8s.io/client-go/informers/factory.go:134 (17-Nov-2021 13:03:52.095) (total time: 26509ms):
+Trace[2086131962]: ---"Objects listed" 26509ms (13:04:00.101)
+Trace[2086131962]: [26.5098596s] [26.5098596s] END
+I1117 13:04:21.108861       1 trace.go:205] Trace[1295981905]: "Reflector ListAndWatch" name:k8s.io/client-go/informers/factory.go:134 (17-Nov-2021 13:03:52.040) (total time: 26571ms):
+Trace[1295981905]: ---"Objects listed" 26562ms (13:04:00.100)
+Trace[1295981905]: [26.5711792s] [26.5711792s] END
+I1117 13:04:21.115264       1 trace.go:205] Trace[903491288]: "Reflector ListAndWatch" name:k8s.io/client-go/informers/factory.go:134 (17-Nov-2021 13:03:52.193) (total time: 26424ms):
+Trace[903491288]: ---"Objects listed" 26424ms (13:04:00.114)
+Trace[903491288]: [26.4247234s] [26.4247234s] END
+I1117 13:04:21.119983       1 trace.go:205] Trace[1725527939]: "Reflector ListAndWatch" name:k8s.io/client-go/informers/factory.go:134 (17-Nov-2021 13:03:52.191) (total time: 26432ms):
+Trace[1725527939]: ---"Objects listed" 26428ms (13:04:00.116)
+Trace[1725527939]: [26.4322186s] [26.4322186s] END
+I1117 13:04:21.134106       1 trace.go:205] Trace[936348242]: "Reflector ListAndWatch" name:k8s.io/client-go/informers/factory.go:134 (17-Nov-2021 13:03:52.303) (total time: 26334ms):
+Trace[936348242]: ---"Objects listed" 26334ms (13:04:00.133)
+Trace[936348242]: [26.3343713s] [26.3343713s] END
+I1117 13:04:21.155044       1 trace.go:205] Trace[940651025]: "Reflector ListAndWatch" name:k8s.io/client-go/informers/factory.go:134 (17-Nov-2021 13:03:52.193) (total time: 26464ms):
+Trace[940651025]: ---"Objects listed" 26464ms (13:04:00.154)
+Trace[940651025]: [26.4644492s] [26.4644492s] END
+I1117 13:04:21.160690       1 trace.go:205] Trace[1491892414]: "Reflector ListAndWatch" name:k8s.io/client-go/informers/factory.go:134 (17-Nov-2021 13:03:52.346) (total time: 26317ms):
+Trace[1491892414]: ---"Objects listed" 26313ms (13:04:00.156)
+Trace[1491892414]: [26.3176353s] [26.3176353s] END
+I1117 13:04:21.161384       1 trace.go:205] Trace[1849418289]: "Reflector ListAndWatch" name:k8s.io/client-go/informers/factory.go:134 (17-Nov-2021 13:03:52.426) (total time: 26238ms):
+Trace[1849418289]: ---"Objects listed" 26238ms (13:04:00.161)
+Trace[1849418289]: [26.2383059s] [26.2383059s] END
+I1117 13:04:21.173410       1 trace.go:205] Trace[19328371]: "Reflector ListAndWatch" name:k8s.io/client-go/informers/factory.go:134 (17-Nov-2021 13:03:52.194) (total time: 26482ms):
+Trace[19328371]: ---"Objects listed" 26481ms (13:04:00.172)
+Trace[19328371]: [26.4824698s] [26.4824698s] END
+I1117 13:04:21.195010       1 trace.go:205] Trace[112248545]: "Reflector ListAndWatch" name:k8s.io/client-go/informers/factory.go:134 (17-Nov-2021 13:03:52.425) (total time: 26272ms):
+Trace[112248545]: ---"Objects listed" 26272ms (13:04:00.194)
+Trace[112248545]: [26.2725496s] [26.2725496s] END
+I1117 13:04:21.228198       1 trace.go:205] Trace[1319157156]: "Reflector ListAndWatch" name:k8s.io/client-go/informers/factory.go:134 (17-Nov-2021 13:03:52.317) (total time: 26414ms):
+Trace[1319157156]: ---"Objects listed" 26414ms (13:04:00.227)
+Trace[1319157156]: [26.4142827s] [26.4142827s] END
+I1117 13:04:21.233740       1 trace.go:205] Trace[1190679713]: "Reflector ListAndWatch" name:k8s.io/client-go/informers/factory.go:134 (17-Nov-2021 13:03:52.277) (total time: 26458ms):
+Trace[1190679713]: ---"Objects listed" 26458ms (13:04:00.232)
+Trace[1190679713]: [26.458518s] [26.458518s] END
+I1117 13:04:21.241390       1 trace.go:205] Trace[209164892]: "Reflector ListAndWatch" name:k8s.io/client-go/informers/factory.go:134 (17-Nov-2021 13:03:52.427) (total time: 26317ms):
+Trace[209164892]: ---"Objects listed" 26314ms (13:04:00.238)
+Trace[209164892]: [26.3177284s] [26.3177284s] END
+I1117 13:04:21.261284       1 trace.go:205] Trace[741458109]: "Reflector ListAndWatch" name:k8s.io/client-go/metadata/metadatainformer/informer.go:90 (17-Nov-2021 13:03:52.239) (total time: 26525ms):
+Trace[741458109]: ---"Objects listed" 26525ms (13:04:00.261)
+Trace[741458109]: [26.5252824s] [26.5252824s] END
+I1117 13:04:21.268429       1 trace.go:205] Trace[1711616960]: "Reflector ListAndWatch" name:k8s.io/client-go/informers/factory.go:134 (17-Nov-2021 13:03:52.427) (total time: 26344ms):
+Trace[1711616960]: ---"Objects listed" 26344ms (13:04:00.268)
+Trace[1711616960]: [26.3443234s] [26.3443234s] END
+I1117 13:04:21.269905       1 trace.go:205] Trace[257085239]: "Reflector ListAndWatch" name:k8s.io/client-go/informers/factory.go:134 (17-Nov-2021 13:03:52.365) (total time: 26408ms):
+Trace[257085239]: ---"Objects listed" 26407ms (13:04:00.269)
+Trace[257085239]: [26.4080724s] [26.4080724s] END
+I1117 13:04:21.272001       1 trace.go:205] Trace[212248284]: "Reflector ListAndWatch" name:k8s.io/client-go/informers/factory.go:134 (17-Nov-2021 13:03:52.198) (total time: 26576ms):
+Trace[212248284]: ---"Objects listed" 26576ms (13:04:00.271)
+Trace[212248284]: [26.576563s] [26.576563s] END
+I1117 13:04:21.292310       1 trace.go:205] Trace[897001792]: "Reflector ListAndWatch" name:k8s.io/client-go/informers/factory.go:134 (17-Nov-2021 13:03:52.451) (total time: 26344ms):
+Trace[897001792]: ---"Objects listed" 26344ms (13:04:00.292)
+Trace[897001792]: [26.3446315s] [26.3446315s] END
+I1117 13:04:21.499430       1 trace.go:205] Trace[1392752703]: "Reflector ListAndWatch" name:k8s.io/client-go/informers/factory.go:134 (17-Nov-2021 13:03:52.965) (total time: 26037ms):
+Trace[1392752703]: ---"Objects listed" 26037ms (13:04:00.499)
+Trace[1392752703]: [26.0378015s] [26.0378015s] END
+I1117 13:04:21.499448       1 trace.go:205] Trace[386012181]: "Reflector ListAndWatch" name:k8s.io/client-go/informers/factory.go:134 (17-Nov-2021 13:03:52.879) (total time: 26123ms):
+Trace[386012181]: ---"Objects listed" 26123ms (13:04:00.499)
+Trace[386012181]: [26.1235787s] [26.1235787s] END
+I1117 13:04:21.519241       1 trace.go:205] Trace[1557826201]: "Reflector ListAndWatch" name:k8s.io/client-go/informers/factory.go:134 (17-Nov-2021 13:03:52.431) (total time: 26590ms):
+Trace[1557826201]: ---"Objects listed" 26589ms (13:04:00.518)
+Trace[1557826201]: [26.5906576s] [26.5906576s] END
+I1117 13:04:21.525582       1 trace.go:205] Trace[1211914783]: "Reflector ListAndWatch" name:k8s.io/client-go/informers/factory.go:134 (17-Nov-2021 13:03:52.799) (total time: 26229ms):
+Trace[1211914783]: ---"Objects listed" 26229ms (13:04:00.525)
+Trace[1211914783]: [26.2295023s] [26.2295023s] END
+I1117 13:04:21.529815       1 trace.go:205] Trace[1400844960]: "Reflector ListAndWatch" name:k8s.io/client-go/informers/factory.go:134 (17-Nov-2021 13:03:52.806) (total time: 26227ms):
+Trace[1400844960]: ---"Objects listed" 26226ms (13:04:00.529)
+Trace[1400844960]: [26.2271247s] [26.2271247s] END
+I1117 13:04:21.530288       1 trace.go:205] Trace[1331659530]: "Reflector ListAndWatch" name:k8s.io/client-go/informers/factory.go:134 (17-Nov-2021 13:03:52.903) (total time: 26129ms):
+Trace[1331659530]: ---"Objects listed" 26129ms (13:04:00.530)
+Trace[1331659530]: [26.1297791s] [26.1297791s] END
+I1117 13:04:21.530662       1 trace.go:205] Trace[1163134915]: "Reflector ListAndWatch" name:k8s.io/client-go/informers/factory.go:134 (17-Nov-2021 13:03:52.987) (total time: 26047ms):
+Trace[1163134915]: ---"Objects listed" 26046ms (13:04:00.530)
+Trace[1163134915]: [26.0470358s] [26.0470358s] END
+I1117 13:04:21.546235       1 trace.go:205] Trace[218920367]: "Reflector ListAndWatch" name:k8s.io/client-go/informers/factory.go:134 (17-Nov-2021 13:03:52.684) (total time: 26365ms):
+Trace[218920367]: ---"Objects listed" 26365ms (13:04:00.546)
+Trace[218920367]: [26.3651202s] [26.3651202s] END
+I1117 13:04:21.570386       1 trace.go:205] Trace[859677078]: "Reflector ListAndWatch" name:k8s.io/client-go/informers/factory.go:134 (17-Nov-2021 13:03:52.488) (total time: 26585ms):
+Trace[859677078]: ---"Objects listed" 26584ms (13:04:00.569)
+Trace[859677078]: [26.5857004s] [26.5857004s] END
+I1117 13:04:21.574798       1 trace.go:205] Trace[1290929087]: "Reflector ListAndWatch" name:k8s.io/client-go/informers/factory.go:134 (17-Nov-2021 13:03:52.561) (total time: 26516ms):
+Trace[1290929087]: ---"Objects listed" 26516ms (13:04:00.574)
+Trace[1290929087]: [26.5168186s] [26.5168186s] END
+I1117 13:04:21.575034       1 trace.go:205] Trace[226008916]: "Reflector ListAndWatch" name:k8s.io/client-go/metadata/metadatainformer/informer.go:90 (17-Nov-2021 13:03:52.870) (total time: 26207ms):
+Trace[226008916]: ---"Objects listed" 26207ms (13:04:00.574)
+Trace[226008916]: [26.2074476s] [26.2074476s] END
+I1117 13:04:21.578879       1 trace.go:205] Trace[1284911820]: "Reflector ListAndWatch" name:k8s.io/client-go/informers/factory.go:134 (17-Nov-2021 13:03:52.848) (total time: 26234ms):
+Trace[1284911820]: ---"Objects listed" 26233ms (13:04:00.578)
+Trace[1284911820]: [26.2340898s] [26.2340898s] END
+I1117 13:04:21.592466       1 trace.go:205] Trace[1531801547]: "Reflector ListAndWatch" name:k8s.io/client-go/informers/factory.go:134 (17-Nov-2021 13:03:52.884) (total time: 26211ms):
+Trace[1531801547]: ---"Objects listed" 26211ms (13:04:00.591)
+Trace[1531801547]: [26.2114808s] [26.2114808s] END
+I1117 13:04:21.622739       1 trace.go:205] Trace[103109486]: "Reflector ListAndWatch" name:k8s.io/client-go/informers/factory.go:134 (17-Nov-2021 13:03:52.704) (total time: 26421ms):
+Trace[103109486]: ---"Objects listed" 26421ms (13:04:00.622)
+Trace[103109486]: [26.4218947s] [26.4218947s] END
+I1117 13:04:21.623726       1 trace.go:205] Trace[1373225267]: "Reflector ListAndWatch" name:k8s.io/client-go/informers/factory.go:134 (17-Nov-2021 13:03:52.489) (total time: 26637ms):
+Trace[1373225267]: ---"Objects listed" 26637ms (13:04:00.623)
+Trace[1373225267]: [26.6373882s] [26.6373882s] END
+I1117 13:04:21.626051       1 trace.go:205] Trace[1159727657]: "Reflector ListAndWatch" name:k8s.io/client-go/informers/factory.go:134 (17-Nov-2021 13:03:52.428) (total time: 26701ms):
+Trace[1159727657]: ---"Objects listed" 26700ms (13:04:00.625)
+Trace[1159727657]: [26.7011188s] [26.7011188s] END
+I1117 13:04:21.632732       1 trace.go:205] Trace[961792564]: "Reflector ListAndWatch" name:k8s.io/client-go/informers/factory.go:134 (17-Nov-2021 13:03:52.931) (total time: 26193ms):
+Trace[961792564]: ---"Objects listed" 26192ms (13:04:00.621)
+Trace[961792564]: [26.1930708s] [26.1930708s] END
+I1117 13:04:21.633886       1 trace.go:205] Trace[1872000742]: "Reflector ListAndWatch" name:k8s.io/client-go/informers/factory.go:134 (17-Nov-2021 13:03:52.619) (total time: 26517ms):
+Trace[1872000742]: ---"Objects listed" 26517ms (13:04:00.633)
+Trace[1872000742]: [26.5173159s] [26.5173159s] END
+I1117 13:04:21.649001       1 trace.go:205] Trace[1505068996]: "Reflector ListAndWatch" name:k8s.io/client-go/informers/factory.go:134 (17-Nov-2021 13:03:52.435) (total time: 26716ms):
+Trace[1505068996]: ---"Objects listed" 26716ms (13:04:00.648)
+Trace[1505068996]: [26.7168211s] [26.7168211s] END
+I1117 13:04:21.649338       1 trace.go:205] Trace[1205912154]: "Reflector ListAndWatch" name:k8s.io/client-go/informers/factory.go:134 (17-Nov-2021 13:03:52.492) (total time: 26660ms):
+Trace[1205912154]: ---"Objects listed" 26660ms (13:04:00.649)
+Trace[1205912154]: [26.6603043s] [26.6603043s] END
+I1117 13:04:21.649670       1 trace.go:205] Trace[1920230373]: "Reflector ListAndWatch" name:k8s.io/client-go/informers/factory.go:134 (17-Nov-2021 13:03:52.765) (total time: 26387ms):
+Trace[1920230373]: ---"Objects listed" 26387ms (13:04:00.649)
+Trace[1920230373]: [26.3875147s] [26.3875147s] END
+I1117 13:04:21.650364       1 trace.go:205] Trace[1673291750]: "Reflector ListAndWatch" name:k8s.io/client-go/informers/factory.go:134 (17-Nov-2021 13:03:52.685) (total time: 26467ms):
+Trace[1673291750]: ---"Objects listed" 26467ms (13:04:00.650)
+Trace[1673291750]: [26.4678799s] [26.4678799s] END
+W1117 15:45:23.406368       1 garbagecollector.go:705] failed to discover preferred resources: Unauthorized
+E1117 15:45:23.406368       1 resource_quota_controller.go:409] failed to discover resources: Unauthorized
+E1117 22:54:44.565642       1 resource_quota_controller.go:409] failed to discover resources: Unauthorized
+W1117 22:54:44.584071       1 garbagecollector.go:705] failed to discover preferred resources: Unauthorized
+E1118 00:46:01.860407       1 resource_quota_controller.go:409] failed to discover resources: Unauthorized
+W1118 00:46:02.791686       1 garbagecollector.go:705] failed to discover preferred resources: Unauthorized
+W1118 02:58:16.911227       1 garbagecollector.go:705] failed to discover preferred resources: Unauthorized
+E1118 02:58:16.933134       1 resource_quota_controller.go:409] failed to discover resources: Unauthorized
+W1118 05:59:12.086372       1 garbagecollector.go:705] failed to discover preferred resources: Unauthorized
+E1118 05:59:42.486845       1 resource_quota_controller.go:409] failed to discover resources: Unauthorized
+W1118 08:31:07.047162       1 garbagecollector.go:705] failed to discover preferred resources: Unauthorized
+E1118 08:31:36.963335       1 resource_quota_controller.go:409] failed to discover resources: Unauthorized
+W1118 11:23:30.272650       1 garbagecollector.go:705] failed to discover preferred resources: Unauthorized
+E1118 11:23:30.301371       1 resource_quota_controller.go:409] failed to discover resources: Unauthorized
+E1118 12:25:23.441003       1 resource_quota_controller.go:409] failed to discover resources: Unauthorized
+W1118 12:25:23.475876       1 garbagecollector.go:705] failed to discover preferred resources: Unauthorized

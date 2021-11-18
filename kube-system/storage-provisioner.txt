@@ -1,0 +1,5 @@
+I1117 13:04:21.324993       1 leaderelection.go:242] attempting to acquire leader lease  kube-system/docker.io-hostpath...
+I1117 13:04:39.007137       1 leaderelection.go:252] successfully acquired lease kube-system/docker.io-hostpath
+I1117 13:04:39.009740       1 event.go:281] Event(v1.ObjectReference{Kind:"Endpoints", Namespace:"kube-system", Name:"docker.io-hostpath", UID:"1c7d7d71-e674-495f-94d3-6eb9c71c7d99", APIVersion:"v1", ResourceVersion:"20900", FieldPath:""}): type: 'Normal' reason: 'LeaderElection' storage-provisioner_36a8b71b-a0c5-4a01-a8ea-7598f2642ebb became leader
+I1117 13:04:39.012465       1 controller.go:780] Starting provisioner controller docker.io/hostpath_storage-provisioner_36a8b71b-a0c5-4a01-a8ea-7598f2642ebb!
+I1117 13:04:39.213303       1 controller.go:829] Started provisioner controller docker.io/hostpath_storage-provisioner_36a8b71b-a0c5-4a01-a8ea-7598f2642ebb!

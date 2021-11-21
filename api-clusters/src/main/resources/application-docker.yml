@@ -38,9 +38,9 @@ redis:
 connector:
    catalog:
       host: api-catalog:6070
-      responseTimeout: 2000
-      connectionTimeout: 2000
-      readTimeout: 2000
+      responseTimeout: 10000
+      connectionTimeout: 10000
+      readTimeout: 10000
    pricing:
       host: api-pricing:5070
       responseTimeout: 10000

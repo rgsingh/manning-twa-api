@@ -1,9 +1,11 @@
 package com.twa.flights.api.itineraries.search.connector;
 
-import java.time.Duration;
-import java.util.List;
-import java.util.concurrent.TimeUnit;
-
+import com.twa.flights.api.itineraries.search.connector.configuration.ProviderBetaConnectorConfiguration;
+import com.twa.flights.api.itineraries.search.exception.TWAException;
+import com.twa.flights.common.dto.itinerary.ItineraryDTO;
+import com.twa.flights.common.dto.request.AvailabilityRequestDTO;
+import io.netty.channel.ChannelOption;
+import io.netty.handler.timeout.ReadTimeoutHandler;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -14,15 +16,11 @@ import org.springframework.http.client.reactive.ClientHttpConnector;
 import org.springframework.http.client.reactive.ReactorClientHttpConnector;
 import org.springframework.stereotype.Component;
 import org.springframework.web.reactive.function.client.WebClient;
-
-import com.twa.flights.api.itineraries.search.connector.configuration.ProviderBetaConnectorConfiguration;
-import com.twa.flights.api.itineraries.search.exception.TWAException;
-import com.twa.flights.common.dto.itinerary.ItineraryDTO;
-import com.twa.flights.common.dto.request.AvailabilityRequestDTO;
-
-import io.netty.channel.ChannelOption;
-import io.netty.handler.timeout.ReadTimeoutHandler;
 import reactor.netty.http.client.HttpClient;
+
+import java.time.Duration;
+import java.util.List;
+import java.util.concurrent.TimeUnit;
 
 @Component
 public class ProviderBetaConnector {

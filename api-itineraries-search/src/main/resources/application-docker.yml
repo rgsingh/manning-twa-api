@@ -1,6 +1,6 @@
 management:
   health.db.enabled: false
-  endpoints:    
+  endpoints:
     web:
       base-path: /
       exposure:
@@ -23,22 +23,22 @@ chaos:
       restController: true
     assaults:
       exceptionsActive: true
-      latencyActive: true   
+      latencyActive: true
       latencyRangeStart: 10
-      latencyRangeEnd: 12000  
-      
+      latencyRangeEnd: 12000
+
 spring:
   profiles:
     active: default
 
-connector:  
+connector:
    provider-alpha:
       host: api-provider-alpha:8070
-      responseTimeout: 5000
-      connectionTimeout: 5000
-      readTimeout: 5000         
+      responseTimeout: 10000
+      connectionTimeout: 10000
+      readTimeout: 10000
    provider-beta:
       host: api-provider-beta:9070
-      responseTimeout: 5000
-      connectionTimeout: 5000
-      readTimeout: 5000 
+      responseTimeout: 10000
+      connectionTimeout: 10000
+      readTimeout: 10000

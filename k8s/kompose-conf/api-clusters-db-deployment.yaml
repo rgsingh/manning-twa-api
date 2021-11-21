@@ -1,0 +1,31 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  annotations:
+    kompose.cmd: kompose convert -f docker-compose.yml
+    kompose.version: 1.26.0 (40646f47)
+  creationTimestamp: null
+  labels:
+    io.kompose.service: api-clusters-db
+  name: api-clusters-db
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      io.kompose.service: api-clusters-db
+  strategy: {}
+  template:
+    metadata:
+      annotations:
+        kompose.cmd: kompose convert -f docker-compose.yml
+        kompose.version: 1.26.0 (40646f47)
+      creationTimestamp: null
+      labels:
+        io.kompose.service: api-clusters-db
+    spec:
+      containers:
+        - image: redis:alpine
+          name: api-clusters-db
+          resources: {}
+      restartPolicy: Always
+status: {}
